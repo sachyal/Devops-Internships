@@ -1,0 +1,5 @@
+ terraform init                  // initializing and installing the plugins
+ terraform validate           // validating the terraform files
+ terraform plan               // testing the configuration files before run
+ terraform apply           // applying and running the code mentioned inside the terraform files
+ terraform destroy   // destroy the provisioned resources as per the Terraform State file
