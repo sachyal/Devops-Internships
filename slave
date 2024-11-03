@@ -1,1 +1,8 @@
 vi .ssh/authorized_keys
+
+dpkg -l | grep apache2
+sudo systemctl status apache2
+apache2 -v
+sudo apt install net-tools
+sudo netstat -tulnp | grep 80
+cat ~/slave_output.log
