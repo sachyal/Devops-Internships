@@ -1,0 +1,21 @@
+pwd
+mkdir ansible_work
+cd ansible_work
+vi playbook1.yml
+
+---
+- hosts: ansibleslave
+become: yes
+become_method: sudo
+become_user: root
+name: This is my Play for Apache Installation in Slave
+tasks:
+- name: Execute on remote Slave Server
+command: sh /home/ubuntu/test_script.sh
+- name: Update the package repository
+apt:
+update_cache: yes
+- name: Install apache2 on Slave
+apt:
+name: apache2
+state: latest
