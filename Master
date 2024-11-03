@@ -7,3 +7,5 @@ ansible –version
 
 ssh-keygen
 cat .ssh/id_rsa.pub
+
+ssh ubuntu@<public-ip-address of Slave>
