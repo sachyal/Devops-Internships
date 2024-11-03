@@ -9,3 +9,9 @@ ssh-keygen
 cat .ssh/id_rsa.pub
 
 ssh ubuntu@<public-ip-address of Slave>
+
+sudo vi /etc/ansible/hosts
+[remote-hosts]
+ansibleslave ansible_host= public ip of slave
+
+ 
