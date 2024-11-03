@@ -1,0 +1,9 @@
+cd ~
+vi test_script.sh
+
+#!/bin/bash
+echo "HELLO ANSIBLE!!!" > slave_output.log
+echo "I am on :- " >> slave_output.log
+echo "----------------------------" >> slave_output.log
+echo "`hostnamectl`" >> slave_output.log
+echo "----------------------------" >> slave_output.log
