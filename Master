@@ -14,4 +14,10 @@ sudo vi /etc/ansible/hosts
 [remote-hosts]
 ansibleslave ansible_host= public ip of slave
 
+ ansible -m ping ansibleslave
+ansible -m ping remote-hosts (Now, we have verified that Ansible Master and Slave can respond to Ansible SSH connection through inventory file “hosts”)
+
+
+
+
  
