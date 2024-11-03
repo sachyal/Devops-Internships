@@ -19,3 +19,5 @@ update_cache: yes
 apt:
 name: apache2
 state: latest
+
+chmod 755 test_script.sh
